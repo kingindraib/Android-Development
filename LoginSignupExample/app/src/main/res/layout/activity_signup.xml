@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10sp"
-    >
 
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+     >
     <TextView
         android:id="@+id/signup"
         android:layout_width="match_parent"
@@ -17,43 +21,49 @@
         android:textStyle="bold"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:id="@+id/full_name_edit_text"
         android:layout_marginTop="8dp"
         android:hint="@string/full_name"
         android:maxLines="1"
+        style="@style/customEditTextStyle"
+
         />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:id="@+id/address_edit_text"
         android:hint="@string/address"
         android:layout_marginTop="8sp"
         android:maxLines="1"
+        style="@style/customEditTextStyle"
         />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:id="@+id/phone_number_edit_text"
         android:hint="@string/mobile_number"
         android:layout_marginTop="8sp"
         android:inputType="phone"
         android:maxLines="1"
+        style="@style/customEditTextStyle"
         />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:id="@+id/password_edit_text"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:layout_marginTop="8sp"
         android:maxLines="1"
+        style="@style/customEditTextStyle"
         />
 
     <RadioGroup
+        android:id="@+id/gener_radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -62,23 +72,24 @@
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/male"
+            android:id="@+id/male_radio"
             android:text="@string/male"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/female"
+            android:id="@+id/female_radio"
             android:text="@string/female"
             />
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/others"
+            android:id="@+id/others_radio"
             android:text="@string/others"
             />
     </RadioGroup>
 
     <Spinner
+        android:id="@+id/countries_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/countries"
@@ -87,6 +98,7 @@
         />
 
     <CheckBox
+        android:id="@+id/terms_condion_checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8sp"
@@ -94,6 +106,7 @@
         />
 
     <Button
+        android:id="@+id/sign_up_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
@@ -102,6 +115,7 @@
         android:backgroundTint="@color/red"
         android:layout_marginStart="10sp"
         android:layout_marginEnd="10sp"
+        android:onClick="signUp"
         />
 
     <TextView
@@ -112,5 +126,5 @@
         android:layout_marginTop="8sp"
         android:textAlignment="center"
         />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

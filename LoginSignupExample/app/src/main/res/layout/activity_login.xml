@@ -75,7 +75,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signupTextview"
+            android:id="@+id/already_account_text_view"
             android:layout_below="@id/login_btn"
             android:text="@string/dont_have_a_account_signup"
             android:textAlignment="center"
