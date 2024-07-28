@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple List View"
+        android:id="@+id/simple_list_view_button"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom List View"
+        android:id="@+id/custom_list_view_button"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Grid View"
+        android:id="@+id/simple_grid_view_button"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Grid View"
+        android:id="@+id/custom_grid_view_button"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycle View"
+        android:id="@+id/recycle_view_button"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
