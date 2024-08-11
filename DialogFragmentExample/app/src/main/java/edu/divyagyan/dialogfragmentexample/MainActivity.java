@@ -43,17 +43,17 @@ public class MainActivity extends AppCompatActivity {
                 FirstInputText = findViewById(R.id.first_input_text);
                 SecondInputText = findViewById(R.id.second_input_text);
                 resultTextView = findViewById(R.id.resultTextView);
-                SubmitButton = findViewById(R.id.submit_button);
-                SubmitButton.setOnClickListener(new View.OnClickListener() {
-                    @SuppressLint("SetTextI18n")
-                    @Override
-                    public void onClick(View v) {
-                        int firstnum = Integer.parseInt(FirstInputText.getText().toString().trim());
-                        int secondnum = Integer.parseInt(SecondInputText.getText().toString().trim());
-                        int sum = firstnum+secondnum;
-                        resultTextView.setText("resutl is "+sum);
-                    }
-                });
+//                SubmitButton = findViewById(R.id.submit_button);
+//                SubmitButton.setOnClickListener(new View.OnClickListener() {
+//                    @SuppressLint("SetTextI18n")
+//                    @Override
+//                    public void onClick(View v) {
+//                        int firstnum = Integer.parseInt(FirstInputText.getText().toString().trim());
+//                        int secondnum = Integer.parseInt(SecondInputText.getText().toString().trim());
+//                        int sum = firstnum+secondnum;
+//                        resultTextView.setText("resutl is "+sum);
+//                    }
+//                });
 
                 builder.create().show();
             }

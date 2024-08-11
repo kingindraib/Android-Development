@@ -11,7 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button simpleListviewButton, customListViewButton;
+    private Button simpleListviewButton, customListViewButton,simpleGridviewExampleButton,
+            customGridViewButton;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -32,6 +33,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =  new Intent(MainActivity.this,CustomListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        simple grid view
+
+        simpleGridviewExampleButton = findViewById(R.id.simple_grid_view_button);
+        simpleGridviewExampleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, SImpleGridViewActivity.class);
+               startActivity(intent);
+            }
+        });
+
+
+//        custom gridview example
+
+        customGridViewButton = findViewById(R.id.custom_grid_view_button);
+        customGridViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,customGridViewActivity.class);
                 startActivity(intent);
             }
         });
