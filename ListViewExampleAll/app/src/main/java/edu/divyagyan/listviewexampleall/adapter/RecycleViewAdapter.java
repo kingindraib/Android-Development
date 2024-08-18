@@ -1,5 +1,6 @@
 package edu.divyagyan.listviewexampleall.adapter;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -14,10 +15,13 @@ import edu.divyagyan.listviewexampleall.model.Movie;
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.customViewHolder>{
 
 
+    private ArrayList<Movie> MovieArraylist;
+
     @NonNull
     @Override
     public customViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext());
+        return new customViewHolder(view);
     }
 
     @Override
@@ -33,6 +37,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     class customViewHolder extends RecyclerView.ViewHolder{
         public customViewHolder(@Nullable View itemView){
             super(itemView);
+
         }
     }
 
